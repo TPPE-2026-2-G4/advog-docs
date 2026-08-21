@@ -1,0 +1,48 @@
+name: 📝 Nova Documentação / Melhoria
+description: Sugira a criação de novas páginas, tutoriais ou reestruturação da navegação.
+title: "[Doc Request]: "
+labels: ["documentation", "enhancement"]
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: Objetivo da Nova Documentação
+      description: Qual tema, guia, arquitetura ou fluxo precisa ser documentado?
+      placeholder: Ex: Criar guia passo a passo sobre configuração do ambiente de desenvolvimento.
+    validations:
+      required: true
+
+  - type: textarea
+    id: target-audience
+    attributes:
+      label: Público-Alvo / Contexto
+      description: Para quem é este conteúdo e por que ele é necessário?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed-structure
+    attributes:
+      label: Estrutura Proposta no `mkdocs.yml`
+      description: Onde essa página deve entrar na árvore de navegação (`nav`) e quais seções ela deve conter?
+      placeholder: |
+        Local na navegação (`mkdocs.yml`):
+        - Guias:
+            - Instalacao: docs/guias/instalacao.md
+
+        Tópicos abordados:
+        - Pré-requisitos
+        - Passo a passo
+        - Resolução de problemas comuns
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist de Conclusão
+      options:
+        - label: Arquivo `.md` criado na pasta `docs/`
+        - label: Página adicionada à chave `nav` do `mkdocs.yml`
+        - label: Build validado localmente sem warnings (`mkdocs build --strict`)
+        - label: Links internos e assets (imagens/diagramas) testados

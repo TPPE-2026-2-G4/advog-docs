@@ -1,0 +1,42 @@
+name: 🐛 Correção na Documentação
+description: Relate links quebrados, erros conceituais, tipografia incorreta ou falhas no MkDocs.
+title: "[Doc Fix]: "
+labels: ["documentation", "bug"]
+body:
+  - type: dropdown
+    id: problem-type
+    attributes:
+      label: Tipo de Problema
+      options:
+        - Link quebrado / 404
+        - Erro conceitual / Conteúdo desatualizado
+        - Erro de sintaxe Markdown / Mermaid / MathJax
+        - Falha no build/deploy (`mkdocs build` / `mkdocs serve`)
+        - Problema de estilo / Tema (ex: Material for MkDocs)
+    validations:
+      required: true
+
+  - type: input
+    id: page-path
+    attributes:
+      label: URL ou Caminho do Arquivo
+      description: Informe a URL publicada ou o arquivo local afetado (ex: `docs/guias/instalacao.md`).
+      placeholder: docs/...
+    validations:
+      required: true
+
+  - type: textarea
+    id: current-content
+    attributes:
+      label: Conteúdo / Comportamento Atual
+      description: O que está incorreto ou falhando no momento?
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-content
+    attributes:
+      label: Correção Sugerida
+      description: Como o texto, link ou configuração deveria estar?
+    validations:
+      required: true
