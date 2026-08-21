@@ -1,4 +1,4 @@
-name: 🐛 Correção na Documentação
+name: Correção na Documentação
 description: Relate links quebrados, erros conceituais, tipografia incorreta ou falhas no MkDocs.
 title: "[Doc Fix]: "
 labels: ["documentation", "bug"]
@@ -20,7 +20,7 @@ body:
     id: page-path
     attributes:
       label: URL ou Caminho do Arquivo
-      description: Informe a URL publicada ou o arquivo local afetado (ex: `docs/guias/instalacao.md`).
+      description: "Informe a URL publicada ou o arquivo local afetado (ex: `docs/guias/instalacao.md`)."
       placeholder: docs/...
     validations:
       required: true

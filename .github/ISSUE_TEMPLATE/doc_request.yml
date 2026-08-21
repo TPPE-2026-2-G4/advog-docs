@@ -1,4 +1,4 @@
-name: 📝 Nova Documentação / Melhoria
+name: Nova Documentação / Melhoria
 description: Sugira a criação de novas páginas, tutoriais ou reestruturação da navegação.
 title: "[Doc Request]: "
 labels: ["documentation", "enhancement"]
@@ -8,7 +8,7 @@ body:
     attributes:
       label: Objetivo da Nova Documentação
       description: Qual tema, guia, arquitetura ou fluxo precisa ser documentado?
-      placeholder: Ex: Criar guia passo a passo sobre configuração do ambiente de desenvolvimento.
+      placeholder: "Ex: Criar guia passo a passo sobre configuração do ambiente de desenvolvimento."
     validations:
       required: true
 
