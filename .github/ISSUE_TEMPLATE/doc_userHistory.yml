@@ -1,32 +1,49 @@
----
-name: Nova História de Usuário (User Story)
-about: Utilize este template para mapear e especificar novos requisitos funcionais do sistema.
-title: '[USXX] - <Título Curto da História>'
-labels: 'enhancement, documentation'
-assignees: ''
----
-
-- **Identificador (US):** USXX
-- **Épico (Módulo):** EPXX - <Nome do Épico>
-- **Ator/Perfil:** (Ex: Cliente, Advogado, Administrador)
-
----
-
-### 📝 História de Usuário
-**Como** [ator],
-**Quero** [ação ou funcionalidade],
-**Para que** [valor ou objetivo gerado].
-
----
-
-### ✅ Critérios de Aceite
-<!-- Liste as condições exatas que precisam ser atendidas para que essa história seja considerada concluída. -->
-- [ ] Critério 1...
-- [ ] Critério 2...
-- [ ] Critério 3...
-
---- 
-
-### 📎 Anexos e Referências
-<!-- Adicione links para a documentação técnica (MkDocs), protótipos do Figma, ou discussões anteriores, se houver. -->
-- Especificação Técnica de Referência:
+name: História de Usuário
+description: Utilize este template para mapear e especificar novos requisitos funcionais do sistema.
+title: '[USXX] - '
+labels: [enhancement, documentation]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### Detalhamento de Requisito
+        Preencha os campos abaixo estruturar a nova funcionalidade.
+        
+  - type: input
+    id: epic
+    attributes:
+      label: Épico (Módulo) e Ator
+      description: Qual é o Épico desta US e quem é o usuário final?
+      placeholder: Ex. EP06 - CRM / Ator Cliente
+    validations:
+      required: true
+      
+  - type: textarea
+    id: story
+    attributes:
+      label: História de Usuário
+      value: |
+        **Como** [ator],
+        **Quero** [ação ou funcionalidade],
+        **Para que** [valor ou objetivo gerado].
+    validations:
+      required: true
+      
+  - type: textarea
+    id: criteria
+    attributes:
+      label: Critérios de Aceite
+      description: Liste as condições exatas que precisam ser atendidas.
+      value: |
+        - [ ] Critério 1
+        - [ ] Critério 2
+    validations:
+      required: true
+      
+  - type: textarea
+    id: references
+    attributes:
+      label: Anexos e Referências
+      description: Links para a documentação, PRs ou discussões anteriores.
+    validations:
+      required: false
