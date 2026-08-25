@@ -4,6 +4,10 @@
 ---
 ## 1. Sobre a disciplina TPPE
 
+ A disciplina de Técnicas de Programação em Plataformas Emergentes (TPPE) eleva a construção de software da simples codificação funcional para a engenharia avançada, focando na criação de sistemas robustos, manuteníveis e escaláveis. Em vez de apenas focar em "fazer o código funcionar", a disciplina ensina a projetar softwares resilientes, capazes de sobreviver ao tempo e a falhas, através da programação defensiva, programação por contrato e tratamento rigoroso de erros e exceções. 
+
+Além da segurança e estabilidade, a ementa dá grande peso à legibilidade e evolução do software. Ela aborda as melhores práticas de projeto, garantindo que o código seja limpo, modular e autoexplicativo, além de explorar profundamente técnicas de refatoração para reestruturar o sistema sem alterar seu comportamento externo. Por fim, a disciplina expande a visão do desenvolvedor para arquiteturas complexas, detalhando o funcionamento, a classificação e a implementação de frameworks, bem como os desafios de se desenvolver e implantar produtos de software em plataformas tecnológicas emergentes.
+
 ## 2. O projeto da Advocacia
 
 ## 3. Os contribuidores
