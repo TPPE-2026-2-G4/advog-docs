@@ -1,0 +1,49 @@
+name: Checagens para Pull Request
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build-validation:
+    name: Teste de Build (Strict)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout do código
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.x
+
+      - name: Instalar dependências
+        run: pip install -r requirements.txt
+
+      - name: Simular build do site
+        run: mkdocs build --strict
+
+  markdown-lint:
+    name: Padronização de Markdown
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout do código
+        uses: actions/checkout@v4
+
+      - name: Verificar formatação
+        uses: DavidAnson/markdownlint-cli2-action@v16
+        with:
+          globs: "docs/**/*.md"
+
+  link-checker:
+    name: Verificação de Links Externos
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout do código
+        uses: actions/checkout@v4
+
+      - name: Validar URLs
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: --accept 200,204,429 "docs/**/*.md"
