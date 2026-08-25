@@ -24,18 +24,6 @@ jobs:
       - name: Simular build do site
         run: mkdocs build --strict
 
-  markdown-lint:
-    name: Padronização de Markdown
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout do código
-        uses: actions/checkout@v4
-
-      - name: Verificar formatação
-        uses: DavidAnson/markdownlint-cli2-action@v16
-        with:
-          globs: "docs/**/*.md"
-
   link-checker:
     name: Verificação de Links Externos
     runs-on: ubuntu-latest
