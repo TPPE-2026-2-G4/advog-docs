@@ -1,0 +1,274 @@
+:root {
+  /* Paleta oficial ADVOG */
+  --black: #000000;
+  --gray: #555555;
+  --gold: #b3852d; /* usar apenas em detalhes: hover, destaques, bordas */
+  --teal: #578390;
+  --navy: #293a4a;
+  --ivory: #ede8e2;
+
+  /* Tons derivados da paleta oficial (tintas/sombras), para contraste de UI e código */
+  --teal-bright: #7aabb7;
+  --teal-deep: #3f5f68;
+  --gold-bright: #d3a24c;
+  --gray-light: #9a9a9a;
+  --code-bg-light: #e3ddd3;
+}
+
+[data-md-color-scheme="advog-light"] {
+  --md-default-bg-color: var(--ivory);
+  --md-default-fg-color: var(--black);
+  --md-default-fg-color--light: var(--gray);
+  --md-default-fg-color--lighter: rgba(85, 85, 85, 0.5);
+  --md-default-fg-color--lightest: rgba(41, 58, 74, 0.14);
+  --md-default-bg-color--dark: var(--black);
+
+  --md-primary-fg-color: var(--navy);
+  --md-primary-bg-color: var(--ivory);
+  --md-accent-fg-color: var(--gold); /* hover de links, ícones ativos */
+
+  --md-typeset-color: var(--black);
+  --md-typeset-a-color: var(--teal-deep); /* teal puro tem contraste baixo demais sobre o marfim */
+
+  --md-code-fg-color: var(--black);
+  --md-code-bg-color: var(--code-bg-light);
+}
+
+[data-md-color-scheme="advog-dark"] {
+  --md-default-bg-color: var(--navy);
+  --md-default-fg-color: var(--ivory);
+  --md-default-fg-color--light: var(--ivory);
+  --md-default-fg-color--lighter: var(--ivory);
+  --md-default-fg-color--lightest: rgba(237, 232, 226, 0.5);
+  --md-primary-fg-color: var(--ivory);
+  --md-primary-bg-color: var(--navy);
+  --md-accent-fg-color: var(--gold-bright); /* hover de links, ícones ativos */
+
+  --md-typeset-color: var(--ivory);
+  --md-typeset-a-color: var(--teal-bright);
+  --md-typeset-mark-color: rgba(179, 133, 45, 0.35);
+
+  --md-code-fg-color: var(--ivory);
+  --md-code-bg-color: var(--black);
+
+  --md-code-hl-comment-color: var(--gray-light);
+  --md-code-hl-punctuation-color: var(--teal-bright);
+  --md-code-hl-generic-color: var(--teal-bright);
+  --md-code-hl-variable-color: var(--ivory);
+  --md-code-hl-string-color: var(--teal-bright);
+  --md-code-hl-keyword-color: var(--gold-bright);
+  --md-code-hl-operator-color: var(--ivory);
+  --md-code-hl-number-color: var(--teal-bright);
+  --md-code-hl-special-color: var(--gold-bright);
+  --md-code-hl-function-color: var(--teal-bright);
+  --md-code-hl-constant-color: var(--gold-bright);
+  --md-code-hl-name-color: var(--md-code-fg-color);
+
+  --md-typeset-del-color: hsla(0, 0%, 40%, 0.15);
+  --md-typeset-ins-color: hsla(190, 22%, 45%, 0.15);
+
+  --md-typeset-table-color: hsla(38, 20%, 85%, 0.12);
+  --md-typeset-table-color--light: hsla(38, 20%, 85%, 0.035);
+}
+
+[data-md-color-scheme="advog-light"] img[src$="#only-dark"],
+[data-md-color-scheme="advog-light"] img[src$="#gh-dark-mode-only"] {
+  display: none; /* Hide dark images in light mode */
+}
+
+[data-md-color-scheme="advog-light"] img[src$="#only-light"],
+[data-md-color-scheme="advog-light"] img[src$="#gh-light-mode-only"] {
+  display: inline; /* Show light images in light mode */
+}
+
+[data-md-color-scheme="advog-dark"] img[src$="#only-light"],
+[data-md-color-scheme="advog-dark"] img[src$="#gh-light-mode-only"] {
+  display: none; /* Hide light images in dark mode */
+}
+
+[data-md-color-scheme="advog-dark"] img[src$="#only-dark"],
+[data-md-color-scheme="advog-dark"] img[src$="#gh-dark-mode-only"] {
+  display: inline; /* Show dark images in dark mode */
+}
+
+/* See: https://github.com/squidfunk/mkdocs-material/issues/175#issuecomment-616694465 */
+.md-typeset__table {
+  min-width: 100%;
+}
+.md-typeset table:not([class]) {
+  display: table;
+}
+
+/* See: https://github.com/astral-sh/ruff/issues/8519 */
+[data-md-color-scheme="advog-dark"] details summary a {
+  color: var(--gold-bright);
+}
+
+/* See: https://github.com/astral-sh/ruff/issues/9046 */
+[data-md-color-scheme="advog-dark"] div.admonition {
+  color: var(--md-code-fg-color);
+  background-color: var(--md-code-bg-color);
+}
+
+/* Prevent the shadow from the nav title from blurring the top link.
+The box shadow isn't really doing anything anyway.
+
+This is a consequence of the reduced nav spacing below. */
+.md-nav--primary .md-nav__title {
+  box-shadow: none;
+}
+
+/* Omits the nav title "uv" entirely unless on a small screen, in which case
+the nav title is needed for backwards navigation in the collapsible
+nav variant.
+
+See https://github.com/astral-sh/uv/issues/5130 */
+@media screen and (min-width: 76.25em) {
+  .md-nav__title {
+    display: none;
+  }
+}
+
+/* Always take the full screen for content, require scrolling to see the footer
+This stops the size of the nav from jumping around when you visit a page without
+a lot of content (i.e., an overview page). We don't apply this to sma screens
+because the nav is in a hamburger menu anyway
+*/
+@media screen and (min-width: 76.25em) {
+  .md-main {
+    min-height: 100vh;
+  }
+}
+
+/* Tweak the formatting of the primary nav on a large screen */
+@media screen and (min-width: 76.25em) {
+  .md-nav--primary .md-nav {
+    font-size: 0.75rem;
+  }
+  /* Remove the bold from the section headings, use a larger font instead */
+  .md-nav__item--section > .md-nav__link {
+    font-weight: normal;
+    font-size: 0.85rem;
+  }
+  /* Reducing spacing between nav items to fit more content
+  First, disable `nav__link` spacing then use `nav__item` to enforce margins this reduces inconsistencies in the spacing. */
+  .md-nav--primary .md-nav__link {
+    margin: 0;
+  }
+  .md-nav--primary .md-nav__item {
+    margin-top: 0.35em;
+  }
+  /* Use larger spacing for the sections headings */
+  .md-nav--primary .md-nav__item--section {
+    margin-bottom: 0.75em;
+    margin-top: 1em;
+  }
+  /* Decrease the font size of items in a collapsible section */
+  .md-nav__item--section
+    > .md-nav
+    > .md-nav__list
+    > .md-nav__item
+    > .md-nav
+    > .md-nav__list {
+    font-size: 0.725rem;
+  }
+  /* Increase top margin on the first item of a collapsible section */
+  .md-nav__item--section
+    > .md-nav
+    > .md-nav__list
+    > .md-nav__item
+    > .md-nav
+    > .md-nav__list
+    > .md-nav__item:first-of-type {
+    margin-top: 0.5em;
+  }
+  /* Increase bottom margin on the last item of a collapsible section */
+  .md-nav__item--section
+    > .md-nav
+    > .md-nav__list
+    > .md-nav__item
+    > .md-nav
+    > .md-nav__list
+    > .md-nav__item:last-of-type {
+    margin-bottom: 0.575em;
+  }
+  /* Increase the size of the first nav item to match the sections
+  It has no children, so it is not considered a section */
+  .md-nav--primary > .md-nav__list > .md-nav__item:first-of-type {
+    font-size: 0.85rem;
+    margin-bottom: 0.75em;
+  }
+}
+
+/* Bold the active nav link for accessibility */
+.md-nav__link--active {
+  font-weight: bold;
+}
+
+/* See: https://mkdocstrings.github.io/recipes/#prevent-selection-of-prompts-and-output-in-python-code-blocks */
+.highlight .gp,
+.highlight .go {
+  /* Generic.Prompt, Generic.Output */
+  user-select: none;
+}
+
+/* Styling for the generated CLI reference page */
+.cli-reference dd {
+  margin-top: 0.1em;
+  margin-bottom: 0.5em;
+}
+.cli-reference dd p {
+  margin-block-start: 0.2em;
+  margin-block-end: 0.3em;
+}
+.cli-reference ul {
+  margin-bottom: 0.1em;
+}
+h3.cli-reference {
+  font-size: 1.1em;
+  margin: 0 0 0 0;
+}
+h3:has(+ p > small.added-in) {
+  display: inline-block;
+  margin: 0;
+}
+h3 + p:has(> small.added-in) {
+  display: inline;
+  margin: 0;
+}
+
+/* Styling for anchor link headers */
+.toclink {
+  color: unset !important;
+}
+
+.toclink:hover {
+  color: var(--md-accent-fg-color) !important;
+}
+
+/* Omit the first breadcrumb item, which is the "Introduction" */
+.md-path__list > .md-path__item:first-of-type {
+  display: none;
+}
+.md-path__list > .md-path__item:nth-of-type(2):before {
+  display: none;
+}
+
+/* Hide the modified date — its positioning is awkward but will require theme
+modifications */
+.md-source-file__fact {
+  visibility: hidden;
+}
+
+/* Team photos on the "Equipe" grid cards */
+.md-typeset .grid.cards > ul > li {
+  text-align: center;
+}
+.md-typeset img.team-photo {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--gold);
+  margin-bottom: 0.5rem;
+}
