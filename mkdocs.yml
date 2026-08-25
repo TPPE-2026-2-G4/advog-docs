@@ -1,12 +1,83 @@
-site_name: Documentação Central | Alexandre
+site_name: Software de Gestão de Processos Jurídicos
 site_description: Guias, referências e arquitetura do projeto
 site_author: "Equipe de Engenharia de Software da UnB"
+repo_url: https://github.com/TPPE-2026-2-G4/advog-docs
+repo_name: Advog Docs
 
 theme:
   name: material
   language: pt-BR
+  logo: assets/logo-advog.png
+  favicon: assets/favicon-advog.png
   palette:
-    scheme: slate
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: advog-light
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: advog-dark
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+  features:
+    - navigation.path
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - navigation.sections
+    - navigation.indexes
+    - navigation.tracking
+    - content.code.annotate
+    - toc.follow
+    - navigation.footer
+    - navigation.top
+    - content.code.copy
+    - content.tabs.link
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.snippets:
+  - pymdownx.magiclink:
+  - attr_list:
+  - toc:
+      anchorlink: true
+      anchorlink_class: "toclink"
+  - md_in_html:
+  - pymdownx.inlinehilite:
+  - pymdownx.superfences:
+  - markdown.extensions.attr_list:
+  - pymdownx.keys:
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      extend_pygments_lang:
+        - name: requirements
+          lang: python
+  - pymdownx.tabbed:
+      alternate_style: true
+extra_css:
+  - stylesheets/extra.css
 
 nav:
-  - Início: index.md
+  - Introdução: index.md
+  - Visão do Projeto:
+    - Cenário de Negócio: pages/1-visao/1-cenario.md
+    - Cronograma: pages/1-visao/2-cronograma.md
+    - Interação com Cliente: pages/1-visao/3-interacao.md
+    - Definições: pages/1-visao/4-dds.md
+    - Backlog do Produto: pages/1-visao/5-backlog.md
+  - Documentação Técnica:
+    - Em Andamento...: pages/2-doctecnico/main.md
+  - Atas de Reunião:
+      - Reunião 1:
+        - Historico do Backlog: pages/3-ata/reuniao1/historico.md
+        - Reuniões:
+            - Kickoff: pages/3-ata/reuniao1/reunioes/kickoff.md
+        
+      

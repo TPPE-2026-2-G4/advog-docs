@@ -1,0 +1,1 @@
+# Cenário Atual do Cliente e do Negócio
