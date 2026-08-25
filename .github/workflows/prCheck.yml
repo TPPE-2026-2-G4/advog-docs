@@ -46,4 +46,4 @@ jobs:
       - name: Validar URLs
         uses: lycheeverse/lychee-action@v2
         with:
-          args: --accept 200,204,429 --exclude-mail "docs/**/*.md"
+          args: --accept 200,204,429 "docs/**/*.md"

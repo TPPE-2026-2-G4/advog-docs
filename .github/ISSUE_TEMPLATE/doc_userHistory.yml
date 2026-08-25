@@ -1,0 +1,32 @@
+---
+name: Nova História de Usuário (User Story)
+about: Utilize este template para mapear e especificar novos requisitos funcionais do sistema.
+title: '[USXX] - <Título Curto da História>'
+labels: 'enhancement, documentation'
+assignees: ''
+---
+
+- **Identificador (US):** USXX
+- **Épico (Módulo):** EPXX - <Nome do Épico>
+- **Ator/Perfil:** (Ex: Cliente, Advogado, Administrador)
+
+---
+
+### 📝 História de Usuário
+**Como** [ator],
+**Quero** [ação ou funcionalidade],
+**Para que** [valor ou objetivo gerado].
+
+---
+
+### ✅ Critérios de Aceite
+<!-- Liste as condições exatas que precisam ser atendidas para que essa história seja considerada concluída. -->
+- [ ] Critério 1...
+- [ ] Critério 2...
+- [ ] Critério 3...
+
+--- 
+
+### 📎 Anexos e Referências
+<!-- Adicione links para a documentação técnica (MkDocs), protótipos do Figma, ou discussões anteriores, se houver. -->
+- Especificação Técnica de Referência:

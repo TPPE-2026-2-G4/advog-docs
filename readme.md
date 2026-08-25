@@ -1,4 +1,4 @@
-# Documentação: Sistema de Gestão Jurídica
+# Documentação | Sistema de Gestão Jurídica
 
 Bem-vindo ao repositório central de documentação da equipe 4 (TPPE-2026-2)! 
 
