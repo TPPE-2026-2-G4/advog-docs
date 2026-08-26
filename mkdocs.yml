@@ -61,8 +61,13 @@ markdown_extensions:
           lang: python
   - pymdownx.tabbed:
       alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - neoteroi.timeline
 extra_css:
   - stylesheets/extra.css
+  - stylesheets/neoteroi.css
 
 nav:
   - Introdução: index.md
@@ -76,9 +81,9 @@ nav:
   - Documentação Técnica:
     - Em Andamento...: pages/2-doctecnico/main.md
   - Atas de Reunião:
-      - Reunião 1:
+      - Sprint 1:
         - Historico do Backlog: pages/3-ata/reuniao1/historico.md
         - Reuniões:
-            - Kickoff: pages/3-ata/reuniao1/reunioes/kickoff.md
+            - kickoff: pages/3-ata/reuniao1/reunioes/kickoff.md
         
       
