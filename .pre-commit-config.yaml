@@ -3,11 +3,14 @@ default_install_hook_types:
   - pre-push
 
 repos:
-  - repo: https://github.com/commitizen-tools/commitizen
-    rev: v4.18.0
+  - repo: local
     hooks:
-      - id: commitizen
+      - id: commit-msg-check
+        name: Valida mensagem de commit (Conventional Commits)
+        entry: scripts/hooks/commit-msg.sh
+        language: script
         stages: [commit-msg]
+        verbose: true
 
   - repo: local
     hooks:
