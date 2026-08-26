@@ -5,7 +5,19 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
+    "commitizen>=4.18.0",
     "mkdocs>=1.6.1",
     "mkdocs-material>=9.7.7",
     "neoteroi-mkdocs>=1.2.0",
 ]
+
+[dependency-groups]
+dev = [
+    "pre-commit>=4.6.2",
+]
+
+[tool.commitizen]
+name = "cz_conventional_commits"
+version = "0.1.0"
+version_provider = "pep621"
+tag_format = "v$version"
