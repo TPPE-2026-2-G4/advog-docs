@@ -5,10 +5,6 @@ set -euo pipefail
 
 COMMIT_MSG_FILE="$1"
 
-echo ""
-echo "🔎 Validando mensagem de commit (Conventional Commits)..."
-echo ""
-
 if ! uv run cz check --commit-msg-file "$COMMIT_MSG_FILE"; then
   echo ""
   echo "❌ Mensagem de commit inválida."
