@@ -1,13 +1,4 @@
 #!/usr/bin/env bash
-# Equivalente ao .husky/prepare-commit-msg do advog-web, mas via
-# Commitizen (Python) em vez de cz-cli (Node).
-#
-# Instalado como hook NATIVO do git (não gerenciado pelo pre-commit): o
-# runner do pre-commit captura stdin/stdout do hook num buffer e só
-# imprime tudo depois que o processo termina, o que quebra o assistente
-# interativo do Commitizen (parece travado). Rodando como hook nativo,
-# git chama este script do jeito de sempre: $1=arquivo da mensagem,
-# $2=origem da mensagem, $3=SHA (em amend).
 set -euo pipefail
 
 COMMIT_MSG_FILE="$1"

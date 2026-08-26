@@ -1,6 +1,4 @@
 #!/usr/bin/env bash
-# Equivalente ao .husky/commit-msg do advog-web (que usa commitlint):
-# aqui quem valida o Conventional Commits é o "cz check" do Commitizen.
 set -euo pipefail
 
 COMMIT_MSG_FILE="$1"

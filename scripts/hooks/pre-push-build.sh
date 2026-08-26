@@ -1,6 +1,4 @@
 #!/usr/bin/env bash
-# Equivalente ao .husky/pre-push do advog-web: garante que a
-# documentação builda antes de permitir o push.
 set -euo pipefail
 
 if ! make build; then
@@ -10,6 +8,3 @@ if ! make build; then
   exit 1
 fi
 
-echo ""
-echo "✅ Build realizado! Continuando com o seu push..."
-echo ""
