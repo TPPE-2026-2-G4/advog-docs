@@ -10,6 +10,22 @@ Além da segurança e estabilidade, a ementa dá grande peso à legibilidade e e
 
 ## 2. O projeto da Advocacia
 
+O **Projeto da Advocacia** é uma plataforma desenvolvida para o advogado **Alexandre Carreiro**, cliente e stakeholder do projeto, com o objetivo de digitalizar e centralizar a gestão do seu escritório de advocacia.
+
+O projeto nasce de duas necessidades principais levantadas junto ao cliente:
+
+1.  **Site institucional** — uma presença pública e atualizável do escritório na internet, apresentando o escritório, a história e os advogados, servindo como vitrine para possíveis clientes.
+2.  **Sistema de gestão jurídica** — um painel interno (estilo CRM) para o gerenciamento de processos, atividades e finanças do escritório, acessível apenas a usuários autorizados.
+
+A **dor central** relatada pelo cliente é o risco de **perda de prazos processuais**, que pode levar à revelia e a prejuízos jurídicos. Por isso, o controle de prazos é a prioridade do painel de gestão, sendo reforçado pelos requisitos não funcionais de confiabilidade e desempenho do backlog.
+
+O escopo foi organizado no [Backlog do Produto](pages/1-visao/5-backlog.md) em dois grandes **Temas**:
+
+*   `TM01` — **Gestão de Negócio**: parte privada do sistema, responsável por gerenciar processos, atividades, finanças e acessos.
+*   `TM02` — **Software Institucional**: parte pública do sistema, acessível aos clientes e visitantes do site.
+
+O desenvolvimento segue um ciclo de **4 meses** com escopo priorizado para um MVP viável, e o acompanhamento das entregas é realizado via **GitHub Projects**, com cada entrega passando pela homologação do Alexandre antes de ser considerada finalizada.
+
 ## 3. Os contribuidores
 
 A equipe de desenvolvedores do Projeto da Advocacia de Alexandre é composta por 7 membros do curso de Engenharia de Software da [Universidade de Brasília (UnB)](https://www.unb.br/).
