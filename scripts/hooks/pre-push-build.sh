@@ -3,10 +3,6 @@
 # documentação builda antes de permitir o push.
 set -euo pipefail
 
-echo ""
-echo "🏗️  Tentando fazer build antes do push..."
-echo ""
-
 if ! make build; then
   echo ""
   echo "❌ Erro de build! Corrija os erros e tente novamente."
