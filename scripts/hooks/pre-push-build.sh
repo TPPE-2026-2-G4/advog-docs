@@ -8,3 +8,6 @@ if ! make build; then
   exit 1
 fi
 
+echo ""
+echo "✅ Compilação realizada com sucesso!"
+echo ""

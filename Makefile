@@ -13,4 +13,3 @@ setup:
 build:
 	@echo "\n\n🏗️ Compilando o projeto... \n"
 	uv run mkdocs build --strict
-	@echo "\n\n✅ Projeto compilado com sucesso! \n"
