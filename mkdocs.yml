@@ -67,6 +67,7 @@ extra_css:
 nav:
   - Introdução: index.md
   - Visão do Projeto:
+    - Visão do Produto e Projeto: pages/1-visao/0-main.md
     - Cenário de Negócio: pages/1-visao/1-cenario.md
     - Cronograma: pages/1-visao/2-cronograma.md
     - Interação com Cliente: pages/1-visao/3-interacao.md
