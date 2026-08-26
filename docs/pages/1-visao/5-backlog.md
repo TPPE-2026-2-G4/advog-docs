@@ -1,6 +1,16 @@
 # Backlog do Produto
 
-## Requisitos Funcionais
+## Backlog Geral
+
+O backlog de produto é uma lista dinâmica e priorizada que contém todos os requisitos, funcionalidades, melhorias e correções que serão necessárias para o desenvolvimento de um produto. Ele funciona como um guia para a equipe de desenvolvimento, servindo de referência para todas as tarefas que precisam ser realizadas ao longo do ciclo de vida do projeto. Essa lista não é fixa, mas sim atualizável conforme o produto evolui e novas necessidades surgem, garantindo que o time esteja sempre alinhado às prioridades e expectativas do projeto.
+
+Em resumo, os Requisitos Funcionais são detalhados por meio das histórias de usuário, que são escritas no formato "Eu como (agente), gostaria de (ação), para que (agregação de valor)".
+
+Dentro do backlog, um dos principais elementos são as **User Stories (US)**, ou histórias de usuário. As histórias de usuário descrevem, em uma linguagem simples e direta, as necessidades do usuário final de forma que todos da equipe possam compreender o valor de cada funcionalidade. Elas são compostas por três elementos principais: quem é o usuário, o que ele deseja fazer e qual o benefício dessa ação. Esse formato ajuda a manter o foco nas necessidades dos usuários, incentivando a equipe a desenvolver soluções que realmente agreguem valor ao produto.
+
+As User Stories mais complexas ou que englobam várias funcionalidades estão agrupadas em **Épicos**. Um épico é uma descrição ampla de uma necessidade maior, que será posteriormente dividida em histórias menores e mais detalhadas. Esse processo de desmembramento ajuda a equipe a compreender o escopo do projeto e a definir prioridades para desenvolver partes do produto em blocos mais manejáveis. Épicos podem ser definidos com base nas principais funcionalidades ou objetivos do produto, e cada um pode se desdobrar em várias histórias de usuário que detalham as tarefas específicas.
+
+Por sua vez, os **Temas** funcionam como agrupamentos de histórias e épicos que compartilham um propósito ou um objetivo comum dentro do produto. Eles são úteis para organizar o backlog em seções que representem áreas ou funcionalidades do sistema, facilitando a priorização de desenvolvimento de acordo com as metas do projeto. Diferente dos épicos, que normalmente possuem um escopo mais restrito, os temas são mais amplos e podem abranger múltiplos épicos e histórias de usuário, fornecendo uma visão geral das grandes áreas do produto.
 
 ### Temas
 
@@ -50,7 +60,47 @@
 
 ## Requisitos Não Funcionais
 
+Os requisitos não funcionais foram organizados com base no modelo **URPS+**, que classifica esses requisitos em categorias que abrangem Usabilidade, Confiabilidade, Desempenho, Suportabilidade e outras restrições relevantes (identidade visual, segurança, conformidade legal e limites de escopo do projeto). Esse sistema facilita a análise e priorização das características que impactam na qualidade geral do software, além de assegurar que ele atenda aos padrões esperados pelo cliente e pelos usuários. A dor central relatada pelo cliente — o risco de perda de prazos processuais, que pode levar à revelia — reforça a importância de tratar confiabilidade e desempenho como categorias críticas, e não apenas os requisitos funcionais de gestão de prazos.
+
+### Usabilidade
+
 | Cód. | Descrição do Requisito |
 | :--- | :--- |
-| RQN01 | Dados pessoais e sensíveis (inclusive de saúde, comuns em processos previdenciários) devem ser tratados com base legal adequada, acesso restrito por perfil e política de retenção definida. |
-| RQN02 | Sistema acessível via navegador, sem necessidade de instalação local; meta inicial de disponibilidade compatível com um ambiente de baixo custo. |
+| RQN01 | O sistema deve seguir o princípio de Mobile First: toda tela deve ser projetada primeiro para largura mínima de 360px, sendo então adaptada para tablet (≥768px) e desktop (≥1024px). |
+| RQN02 | A interface deve ser responsiva em todas as resoluções entre 360px e 1920px de largura, sem gerar rolagem horizontal e sem ocultar ou quebrar nenhuma funcionalidade nas telas testadas. |
+| RQN03 | Deve existir uma página estática, acessível sem autenticação, apresentando o escritório de advocacia (apresentação institucional e áreas de atuação). |
+| RQN04 | Deve existir uma página estática, acessível sem autenticação, apresentando os advogados do escritório (nome, foto e área de atuação de cada integrante). |
+| RQN05 | Deve existir uma página estática, acessível sem autenticação, contando a história do escritório de advocacia. |
+
+### Confiabilidade
+
+| Cód. | Descrição do Requisito |
+| :--- | :--- |
+| RQN06 | Falhas ou indisponibilidade das integrações externas (DataJud, diários oficiais) não podem derrubar o restante do sistema: em 100% dos casos de erro externo, as demais funcionalidades devem permanecer operacionais e o erro deve ser registrado em log em até 5 segundos. |
+| RQN07 | 0% de perda de dados confirmados: toda transação de lançamento financeiro, processo, tarefa ou prazo, uma vez salva com sucesso, deve permanecer íntegra no banco, com rotina de backup diária e retenção mínima de 30 dias. |
+| RQN08 | O cálculo automático de prazos processuais deve apresentar 0 (zero) dias de divergência em relação à regra de contagem configurada, validado por suíte de testes automatizados cobrindo 100% das regras cadastradas. |
+
+### Desempenho
+
+| Cód. | Descrição do Requisito |
+| :--- | :--- |
+| RQN09 | O sistema deve ser acessível via navegador, sem instalação local, com meta inicial de disponibilidade (uptime) de 95% ao mês, compatível com um ambiente de hospedagem de baixo custo. |
+| RQN10 | Listagens, filtros e dashboards (financeiro, operacional, de atividades e de processos) devem carregar em até 3 segundos para uma base de até 10.000 registros, em condições normais de rede. |
+| RQN11 | Notificações de vencimento de prazos processuais e financeiros devem ser geradas com no mínimo 3 dias de antecedência (prazo configurável) e novamente no próprio dia do vencimento. |
+
+### Suportabilidade
+
+| Cód. | Descrição do Requisito |
+| :--- | :--- |
+| RQN12 | O sistema deve seguir uma arquitetura em camadas (apresentação, negócio e dados) sem dependências circulares entre camadas, permitindo que cada camada seja testada de forma isolada. |
+| RQN13 | O código-fonte deve ser validado por ferramentas de lint no pipeline de CI, com 0 (zero) erros bloqueantes tolerados antes do merge em qualquer branch principal. |
+| RQN14 | O sistema deve possuir cobertura mínima de 95% de testes automatizados (unitários e de integração parametrizados), medida por ferramenta de cobertura no pipeline de CI, com o build bloqueado caso o percentual fique abaixo desse limite. |
+| RQN15 | O sistema deve possuir testes end-to-end com Selenium cobrindo 100% dos fluxos críticos (login, cadastro de processo, cadastro de prazo e lançamento financeiro), executados a cada merge nas branches principais. |
+
+### + (Restrições Adicionais)
+
+| Cód. | Descrição do Requisito |
+| :--- | :--- |
+| RQN17 | Dados pessoais e sensíveis (inclusive de saúde, comuns em processos previdenciários) devem ter acesso restrito por perfil (RBAC). |
+| RQN18 | 100% das requisições entre cliente e servidor devem trafegar via HTTPS (TLS 1.2 ou superior); nenhuma rota deve responder em HTTP puro. |
+| RQN19 | Senhas de usuários devem ser armazenadas com algoritmo de hash de custo configurável, sendo 0% delas armazenadas em texto plano. |
