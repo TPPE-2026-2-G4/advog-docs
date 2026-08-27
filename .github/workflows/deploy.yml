@@ -1,4 +1,4 @@
-name: Deploy MkDocs
+name: Deploy MkDocs to Pages
 
 on:
   push:
@@ -6,9 +6,17 @@ on:
       - main
 
 permissions:
-  contents: write
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
 jobs:
-  deploy:
+  build:
+    name: Build da Documentação
     runs-on: ubuntu-latest
     steps:
       - name: Checkout do código
@@ -17,10 +25,28 @@ jobs:
       - name: Configurar Python
         uses: actions/setup-python@v5
         with:
-          python-version: 3.x
+          python-version: '3.x'
+          cache: 'pip'
 
       - name: Instalar dependências
         run: pip install -r requirements.txt
 
-      - name: Gerar site e fazer Deploy
-        run: mkdocs gh-deploy --force
+      - name: Fazer o build do site estático
+        run: mkdocs build
+
+      - name: Empacotar os arquivos (Artifact)
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./site
+
+  deploy:
+    name: Publicar no GitHub Pages
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Fazer Deploy para o Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
