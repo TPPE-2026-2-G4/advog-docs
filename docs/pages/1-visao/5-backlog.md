@@ -2,9 +2,9 @@
 
 ## Backlog Geral
 
-O backlog de produto é uma lista dinâmica e priorizada que contém todos os requisitos, funcionalidades, melhorias e correções que serão necessárias para o desenvolvimento de um produto. Ele funciona como um guia para a equipe de desenvolvimento, servindo de referência para todas as tarefas que precisam ser realizadas ao longo do ciclo de vida do projeto. Essa lista não é fixa, mas sim atualizável conforme o produto evolui e novas necessidades surgem, garantindo que o time esteja sempre alinhado às prioridades e expectativas do projeto.
+O **backlog de produto** é uma lista dinâmica e priorizada que contém todos os requisitos, funcionalidades, melhorias e correções que serão necessárias para o desenvolvimento de um produto. Ele funciona como um guia para a equipe de desenvolvimento, servindo de referência para todas as tarefas que precisam ser realizadas ao longo do ciclo de vida do projeto. Essa lista não é fixa, mas sim atualizável conforme o produto evolui e novas necessidades surgem, garantindo que o time esteja sempre alinhado às prioridades e expectativas do projeto.
 
-Em resumo, os Requisitos Funcionais são detalhados por meio das histórias de usuário, que são escritas no formato "Eu como (agente), gostaria de (ação), para que (agregação de valor)".
+Em resumo, os **Requisitos Funcionais** são detalhados por meio das histórias de usuário, que são escritas no formato "Eu como (agente), gostaria de (ação), para que (agregação de valor)".
 
 Dentro do backlog, um dos principais elementos são as **User Stories (US)**, ou histórias de usuário. As histórias de usuário descrevem, em uma linguagem simples e direta, as necessidades do usuário final de forma que todos da equipe possam compreender o valor de cada funcionalidade. Elas são compostas por três elementos principais: quem é o usuário, o que ele deseja fazer e qual o benefício dessa ação. Esse formato ajuda a manter o foco nas necessidades dos usuários, incentivando a equipe a desenvolver soluções que realmente agreguem valor ao produto.
 
@@ -60,7 +60,7 @@ Por sua vez, os **Temas** funcionam como agrupamentos de histórias e épicos qu
 
 ## Requisitos Não Funcionais
 
-Os requisitos não funcionais foram organizados com base no modelo **URPS+**, que classifica esses requisitos em categorias que abrangem Usabilidade, Confiabilidade, Desempenho, Suportabilidade e outras restrições relevantes (identidade visual, segurança, conformidade legal e limites de escopo do projeto). Esse sistema facilita a análise e priorização das características que impactam na qualidade geral do software, além de assegurar que ele atenda aos padrões esperados pelo cliente e pelos usuários. A dor central relatada pelo cliente — o risco de perda de prazos processuais, que pode levar à revelia — reforça a importância de tratar confiabilidade e desempenho como categorias críticas, e não apenas os requisitos funcionais de gestão de prazos.
+Os **requisitos não funcionais** foram organizados com base no modelo **URPS+**, que classifica esses requisitos em categorias que abrangem Usabilidade, Confiabilidade, Desempenho, Suportabilidade e outras restrições relevantes (identidade visual, segurança, conformidade legal e limites de escopo do projeto). Esse sistema facilita a análise e priorização das características que impactam na qualidade geral do software, além de assegurar que ele atenda aos padrões esperados pelo cliente e pelos usuários. A dor central relatada pelo cliente — o risco de perda de prazos processuais, que pode levar à revelia — reforça a importância de tratar confiabilidade e desempenho como categorias críticas, e não apenas os requisitos funcionais de gestão de prazos.
 
 ### Usabilidade
 
@@ -101,9 +101,9 @@ Os requisitos não funcionais foram organizados com base no modelo **URPS+**, qu
 
 | Cód. | Descrição do Requisito |
 | :--- | :--- |
-| RQN17 | Dados pessoais e sensíveis (inclusive de saúde, comuns em processos previdenciários) devem ter acesso restrito por perfil (RBAC). |
-| RQN18 | 100% das requisições entre cliente e servidor devem trafegar via HTTPS (TLS 1.2 ou superior); nenhuma rota deve responder em HTTP puro. |
-| RQN19 | Senhas de usuários devem ser armazenadas com algoritmo de hash de custo configurável, sendo 0% delas armazenadas em texto plano. |
+| RQN16 | Dados pessoais e sensíveis (inclusive de saúde, comuns em processos previdenciários) devem ter acesso restrito por perfil (RBAC). |
+| RQN17 | 100% das requisições entre cliente e servidor devem trafegar via HTTPS (TLS 1.2 ou superior); nenhuma rota deve responder em HTTP puro. |
+| RQN18 | Senhas de usuários devem ser armazenadas com algoritmo de hash de custo configurável, sendo 0% delas armazenadas em texto plano. |
 
 
 </br>
@@ -118,5 +118,9 @@ Os requisitos não funcionais foram organizados com base no modelo **URPS+**, qu
   sub_title: 26/08/2026
   content: Criação do documento e escrita de requisitos por [Pedro Miguel](https://github.com/pedroMADBR).
   icon: ':material-file-document-plus-outline:'
+- title: v1.1
+  sub_title: 28/08/2026
+  content: Correção na numeração dos Requisitos Não Funcionais por [Davi Camilo](https://github.com/Davicamilo23).
+  icon: ':material-file-edit-outline:'
 
 ::/timeline::

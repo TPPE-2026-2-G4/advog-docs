@@ -81,8 +81,9 @@ nav:
     - Em Andamento...: pages/2-doctecnico/main.md
   - Atas de Reunião:
       - Sprint 0:
-        - Historico do Backlog: pages/3-ata/sprint0/historico.md
+        - Histórico do Backlog: pages/3-ata/sprint0/historico.md
         - Reuniões:
             - kickoff: pages/3-ata/sprint0/reunioes/kickoff.md
         
-      
+extra:
+  generator: false
