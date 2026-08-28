@@ -1,1 +1,0 @@
-# Visão do Produto e Projeto
