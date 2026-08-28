@@ -104,3 +104,19 @@ Os requisitos não funcionais foram organizados com base no modelo **URPS+**, qu
 | RQN17 | Dados pessoais e sensíveis (inclusive de saúde, comuns em processos previdenciários) devem ter acesso restrito por perfil (RBAC). |
 | RQN18 | 100% das requisições entre cliente e servidor devem trafegar via HTTPS (TLS 1.2 ou superior); nenhuma rota deve responder em HTTP puro. |
 | RQN19 | Senhas de usuários devem ser armazenadas com algoritmo de hash de custo configurável, sendo 0% delas armazenadas em texto plano. |
+
+
+</br>
+</br>
+
+---
+## Histórico de Versão da Página
+
+::timeline::
+
+- title: v1.0
+  sub_title: 26/08/2026
+  content: Criação do documento e escrita de requisitos por [Pedro Miguel](https://github.com/pedroMADBR).
+  icon: ':material-file-document-plus-outline:'
+
+::/timeline::
