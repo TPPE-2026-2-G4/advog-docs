@@ -1,4 +1,4 @@
-# Historico do Backlog
+# Histórico do Backlog
 
 #### Legenda de Símbolos
 
@@ -6,7 +6,7 @@
 | -------- | ---------------------------------------------------------------- |
 |    📝    | Funcionalidade Incrementada para o Backlog                       |
 |    ✅    | Funcionalidade Finalizada                                        |
-|    🧐    | Funcionalidade que está sendo Homologado                         |
+|    🧐    | Funcionalidade que está sendo Homologada                         |
 |    🚨    | Funcionalidade que entrou em Débito para a Próxima Sprint        |
 |    📂    | Funcionalidade arquivada (Descontinuado)                         |
 |    ⏳    | Funcionalidade em espera para produção                           |
