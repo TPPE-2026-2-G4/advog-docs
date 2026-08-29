@@ -43,7 +43,7 @@ A equipe de desenvolvedores do Projeto da Advocacia de Alexandre é composta por
       <td align="center"><a href="https://github.com/pedroMADBR"><img style="border-radius: 50%;" src="https://github.com/pedroMADBR.png" width="100px;" alt=""/><br /><sub><b>Pedro Miguel</b></sub></a><br /><a href="https://github.com/pedroMADBR" title="Rocketseat">Desenvolvedor Backend</a></td>
     </tr>
     <tr>
-        <td align="center"><a href="https://github.com/TiagoBalieiro"><img style="border-radius: 50%;" src="https://github.com/TiagoBalieiro.png" width="100px;" alt=""/><br /><sub><b>Tiago Antunes</b></sub></a><br /><a href="https://github.com/TiagoBalieiro" title="Rocketseat">Desenvolvedor Frotend</a></td>
+        <td align="center"><a href="https://github.com/TiagoBalieiro"><img style="border-radius: 50%;" src="https://github.com/TiagoBalieiro.png" width="100px;" alt=""/><br /><sub><b>Tiago Antunes</b></sub></a><br /><a href="https://github.com/TiagoBalieiro" title="Rocketseat">Desenvolvedor Frontend</a></td>
         <td></td>
         <td></td>
     </tr>
