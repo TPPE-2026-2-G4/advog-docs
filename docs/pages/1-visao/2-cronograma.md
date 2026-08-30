@@ -1,6 +1,6 @@
 # Cronograma e Entregas
 
-Consultando os códigos das User Stories da seção [Backlog de Produto](./5-backlog.md), o cronograma preliminar do projeto pode ser visualizada logo abaixo:
+Consultando os códigos das User Stories da seção [Backlog de Produto](./5-backlog.md), o cronograma preliminar do projeto pode ser visualizado logo abaixo:
 
 !!! warning
 
