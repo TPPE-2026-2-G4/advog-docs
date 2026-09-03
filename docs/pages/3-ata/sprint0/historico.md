@@ -5,6 +5,7 @@
 | Símbolo  | Significado                                                      |
 | -------- | ---------------------------------------------------------------- |
 |    📝    | Funcionalidade Incrementada para o Backlog                       |
+|    🛠️    | Funcionalidade que está sendo desenvolvida                         |
 |    ✅    | Funcionalidade Finalizada                                        |
 |    🧐    | Funcionalidade que está sendo Homologada                         |
 |    🚨    | Funcionalidade que entrou em Débito para a Próxima Sprint        |
@@ -55,6 +56,10 @@
 - title: v1.1
   sub_title: 28/08/2026
   content: Inclusão do estado dos requisitos na Sprint por [Daniel Rodrigues](https://github.com/DanielRogs).
+  icon: ':material-list-status:'
+- title: v1.2
+  sub_title: 03/09/2026
+  content: Acréscimo em um stado dos requisitos na Sprint por [Davi Rodrigues](https://github.com/DaviRogs).
   icon: ':material-list-status:'
 
 ::/timeline::
