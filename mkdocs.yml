@@ -84,6 +84,10 @@ nav:
         - Histórico do Backlog: pages/3-ata/sprint0/historico.md
         - Reuniões:
             - kickoff: pages/3-ata/sprint0/reunioes/kickoff.md
+      - Sprint 1:
+        - Histórico do Backlog: pages/3-ata/sprint1/historico.md
+        - Reuniões:
+            - sprint 1: pages/3-ata/sprint1/reunioes/sprint1.md
         
 extra:
   generator: false
