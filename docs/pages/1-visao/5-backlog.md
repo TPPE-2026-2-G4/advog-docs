@@ -122,5 +122,9 @@ Os **requisitos não funcionais** foram organizados com base no modelo **URPS+**
   sub_title: 28/08/2026
   content: Correção na numeração dos Requisitos Não Funcionais por [Davi Camilo](https://github.com/Davicamilo23).
   icon: ':material-file-edit-outline:'
+- title: v1.2
+  sub_title: 07/09/2026
+  content: Correção da escrita das Histórias de Usuários sem alterar escopo por [Pedro Miguel](https://github.com/pedroMADBR).
+  icon: ':material-file-edit-outline:'
 
 ::/timeline::
