@@ -22,23 +22,23 @@
 | US04 | Registrar Dados de Finanças | 📝 |
 | US05 | Visualizar calendário de pagamento | 📝 |
 | US06 | Visualizar gráfico de entradas e saídas financeira (Dashboard) | 📝 |
-| US07 | Visualizar planejamento de pagamentos (Dashboard) | 📝 |
+| US07 | Filtrar Finanças | 📝 |
 | US08 | Gerenciar Atividades | 📝 |
 | US09 | Filtrar Atividades | 📝 |
 | US10 | Visualizar KanBan de Atividades | 📝 |
-| US11 | Visualizar dados de produtividade da equipe (Dashboard) | 📝 |
-| US12 | Visualizar revisão geral do estado das atividades (Dashboard) | 📝 |
+| US11 | Visualizar dados de produtividade da equipe | 📝 |
+| US12 | Visualizar revisão geral do estado das atividades | 📝 |
 | US13 | Gerenciar Processos | 📝 |
 | US14 | Filtrar Processos | 📝 |
-| US15 | Visualizar resumo geral de processos (Dashboard) | 📝 |
-| US16 | Visualizar lista de processos em estado crítico (Dashboard) | 📝 |
+| US15 | Visualizar resumo geral de processos | 📝 |
+| US16 | Visualizar lista de processos em estado crítico | 📝 |
 | US17 | Exportar Relatórios | 📝 |
 | US18 | Realizar upload de documentos | 📝 |
 | US19 | Atualizar dados de processo automaticamente | 📝 |
 | US20 | Editar Institucional | 📝 |
 | US21 | Solicitar Serviço | 📝 |
 | US22 | Visualizar clientes | 📝 |
-| US23 | Visualizar Etapas dos Clientes (CRM) | 📝 |
+| US23 | Filtrar por clientes | 📝 |
 
 
 </br>
@@ -59,7 +59,11 @@
   icon: ':material-list-status:'
 - title: v1.2
   sub_title: 03/09/2026
-  content: Acréscimo em um stado dos requisitos na Sprint por [Davi Rodrigues](https://github.com/DaviRogs).
+  content: Acréscimo em um estado dos requisitos na Sprint por [Davi Rodrigues](https://github.com/DaviRogs).
   icon: ':material-list-status:'
+- title: v1.3
+  sub_title: 14/09/2026
+  content: Correção dos nomes de alguns requisitos por [Davi Camilo](https://github.com/Davicamilo23).
+  icon: ':material-file-edit-outline:'
 
 ::/timeline::
