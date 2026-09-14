@@ -37,6 +37,10 @@ Realizar a modelagem do banco de dados do projeto requisito por requisito, defin
 - Requisitos que envolvem exportação de relatórios usarão um campo de URL nas tabelas pertinentes para armazenar links de documentos externos, evitando modelar um sistema de arquivos no banco neste momento.
 - Ponto em aberto: identificada a necessidade de uma solução externa de armazenamento de arquivos (imagens e documentos), além do banco de dados — ainda é preciso pesquisar plataformas adequadas (ex.: Cloudflare R2) e consultar o cliente sobre a volumetria atual antes de decidir.
 
+##### Diagrama Lógico de Dados Conceito
+
+![DLD conceito](../../../../assets/DLDConceito.jpeg)
+
 ##### 2.3.1 Próximos passos
 
 - Pesquisar plataformas de armazenamento de arquivos externas ao PostgreSQL para lidar com documentos e imagens, compartilhando as opções encontradas no grupo do WhatsApp até sexta-feira.
@@ -76,7 +80,7 @@ _Sem atividade em débito_
 
 ## 4. Gravação da Reunião
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Qwy7XAttCV8?si=NWgzElHTbQorawkU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="100%" height="450" src="https://www.youtube.com/embed/Qwy7XAttCV8?si=NWgzElHTbQorawkU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 </br>
 </br>
