@@ -40,7 +40,7 @@ Por sua vez, os **Temas** funcionam como agrupamentos de histórias e épicos qu
 | US04 | EP02 | Registrar Dados de Finanças | Como usuário autorizado, quero registrar manualmente lançamentos financeiros, para controlar pagamentos e recebimentos do escritório. |
 | US05 | EP02 | Visualizar calendário de pagamento | Como advogado, quero visualizar os lançamentos financeiros em um calendário e receber notificações sobre vencimentos próximos para acompanhar compromissos financeiros do escritório. |
 | US06 | EP02 | Visualizar gráfico de entradas e saídas financeira (Dashboard) | Como advogado, quero visualizar e filtrar por dias ou valores em um gráfico de entradas e saídas para acompanhar o movimento financeiro da advocacia. |
-| US07 | EP02 | Visualizar planejamento de pagamentos (Dashboard) | Como advogado, quero visualizar e filtrar, por um determinado período de tempo configurável, pagamentos previstos, feitos e em atrasos, para tomar decisões estratégicas. |
+| US07 | EP02 | Filtrar Finanças | Como advogado, quero visualizar e filtrar, por um determinado período de tempo configurável, pagamentos previstos, feitos e em atrasos, para tomar decisões estratégicas. |
 | US08 | EP03 | Gerenciar Atividades | Como usuário autorizado, quero gerenciar as atividades da advocacia, para delegar as atribuições atuais do escritório. |
 | US09 | EP03 | Filtrar Atividades | Como advogado, quero filtrar e pesquisar por propriedades de atividades específicas para achar atividades de meu interesse mais rápido. |
 | US10 | EP03 | Visualizar KanBan de Atividades | Como usuário autorizado, quero visualizar e interagir com as atividades registradas no sistema em formato KanBan, para acompanhar o progresso das atividades. |
@@ -56,7 +56,7 @@ Por sua vez, os **Temas** funcionam como agrupamentos de histórias e épicos qu
 | US20 | EP05 | Editar Institucional | Como administrador, quero ser capaz de editar informações da página web institucional como cores, logotipo, textos e imagens, para que eu possa manter meu site sempre atualizado. |
 | US21 | EP06 | Solicitar Serviço | Como cliente, quero ser capaz de preencher e enviar um formulário de solicitação de serviço, para que o escritório receba meu pedido e possa iniciar o meu atendimento. |
 | US22 | EP06 | Visualizar clientes | Como advogado, quero ser capaz de visualizar uma lista com os dados dos clientes que já entraram em contato em algum momento, para que eu possa consultar suas informações de contato. |
-| US23 | EP06 | Visualizar Etapas dos Clientes (CRM) | Como advogado, quero visualizar meus clientes organizados em um quadro visual por etapas de negociação, para que eu possa saber quem é o responsável por cada cliente, acompanhar o progresso de cada atendimento e saber exatamente quem precisa de retorno. |
+| US23 | EP06 | Filtrar por clientes | Como advogado, quero filtrar ou buscar por propriedades de um cliente específico, para que possa encontrar clientes facilmente. |
 
 ## Requisitos Não Funcionais
 
@@ -68,7 +68,7 @@ Os **requisitos não funcionais** foram organizados com base no modelo **URPS+**
 | :--- | :--- |
 | RQN01 | O sistema deve seguir o princípio de Mobile First: toda tela deve ser projetada primeiro para largura mínima de 360px, sendo então adaptada para tablet (≥768px) e desktop (≥1024px). |
 | RQN02 | A interface deve ser responsiva em todas as resoluções entre 360px e 1920px de largura, sem gerar rolagem horizontal e sem ocultar ou quebrar nenhuma funcionalidade nas telas testadas. |
-| RQN03 | Deve existir uma página estática, acessível sem autenticação, apresentando o escritório de advocacia (apresentação institucional e áreas de atuação). |
+| RQN03 | Deve existir uma página estática, acessível sem autenticação, apresentando a atuação do escritório. |
 | RQN04 | Deve existir uma página estática, acessível sem autenticação, apresentando os advogados do escritório (nome, foto e área de atuação de cada integrante). |
 | RQN05 | Deve existir uma página estática, acessível sem autenticação, contando a história do escritório de advocacia. |
 
@@ -126,7 +126,7 @@ Os **requisitos não funcionais** foram organizados com base no modelo **URPS+**
   sub_title: 07/09/2026
   content: Correção da escrita das Histórias de Usuários sem alterar escopo por [Pedro Miguel](https://github.com/pedroMADBR).
   icon: ':material-file-edit-outline:'
-  - title: v1.3
+- title: v1.3
   sub_title: 14/09/2026
   content: Correção da escrita das Histórias de Usuários por [Daniel Rodrigues](https://github.com/DanielRogs).
   icon: ':material-file-edit-outline:'
