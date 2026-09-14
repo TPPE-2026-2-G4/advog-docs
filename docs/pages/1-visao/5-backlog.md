@@ -126,5 +126,9 @@ Os **requisitos não funcionais** foram organizados com base no modelo **URPS+**
   sub_title: 07/09/2026
   content: Correção da escrita das Histórias de Usuários sem alterar escopo por [Pedro Miguel](https://github.com/pedroMADBR).
   icon: ':material-file-edit-outline:'
+  - title: v1.3
+  sub_title: 14/09/2026
+  content: Correção da escrita das Histórias de Usuários por [Daniel Rodrigues](https://github.com/DanielRogs).
+  icon: ':material-file-edit-outline:'
 
 ::/timeline::

@@ -88,6 +88,7 @@ nav:
         - Histórico do Backlog: pages/3-ata/sprint1/historico.md
         - Reuniões:
             - 'sprint 1': pages/3-ata/sprint1/reunioes/sprint1.md
+            - Modelagem de Dados: pages/3-ata/sprint1/reunioes/modelagembanco.md
         
 extra:
   generator: false
