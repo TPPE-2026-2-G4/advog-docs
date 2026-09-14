@@ -4,7 +4,7 @@
 
 | Papel                  | Descrição                         | Responsável(is)                                               |
 | ---------------------- | --------------------------------- | ------------------------------------------------------------- |
-| Product Owner          | Responsável por gerenciar o progresso do projeto, atuando como ponto de conexão entre o cliente e a equipe. Além disso, o Product Owner monitora os prazos e prioridades. | _EM DECISÃO_ |
+| Product Owner          | Responsável por gerenciar o progresso do projeto, atuando como ponto de conexão entre o cliente e a equipe. Além disso, o Product Owner monitora os prazos e prioridades. | [Daniel Rodrigues](https://github.com/DanielRogs) |
 | Desenvolvedor Frontend | Desenvolve a interface visual, design e garante a integração com o servidor. | [Davi Camilo](https://github.com/Davicamilo23), [Davi Rodrigues](https://github.com/DaviRogs) e [Tiago Antunes](https://github.com/TiagoBalieiro) |
 | Desenvolvedor Backend  | Desenvolve a lógica do servidor, gerencia banco de dados e integrações. | [Arthur Evangelista](https://github.com/Arthurevg), [Daniel Rodrigues](https://github.com/DanielRogs), [Euller Júlio](https://github.com/Potatoyz908) e [Pedro Miguel](https://github.com/pedroMADBR) |
 | Analista de Requisitos | Identifica, documenta e gerencia as necessidades e expectativas do cliente. | Todos |
@@ -48,6 +48,10 @@
 - title: v1.1
   sub_title: 29/08/2026
   content: Correção de informações no documento por [Davi Camilo](https://github.com/Davicamilo23).
+  icon: ':material-file-edit-outline:'
+- title: v1.2
+  sub_title: 14/09/2026
+  content: Adição do membro Daniel como PO do projeto por [Davi Camilo](https://github.com/Davicamilo23).
   icon: ':material-file-edit-outline:'
 
 ::/timeline::
