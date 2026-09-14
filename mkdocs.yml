@@ -78,7 +78,7 @@ nav:
     - Definições: pages/1-visao/4-dds.md
     - Backlog do Produto: pages/1-visao/5-backlog.md
   - Documentação Técnica:
-    - Em Andamento...: pages/2-doctecnico/main.md
+    - Banco de Dados: pages/2-doctecnico/1-bancodados.md
   - Atas de Reunião:
       - Sprint 0:
         - Histórico do Backlog: pages/3-ata/sprint0/historico.md
@@ -88,6 +88,7 @@ nav:
         - Histórico do Backlog: pages/3-ata/sprint1/historico.md
         - Reuniões:
             - 'sprint 1': pages/3-ata/sprint1/reunioes/sprint1.md
+            - Modelagem de Dados: pages/3-ata/sprint1/reunioes/modelagembanco.md
         
 extra:
   generator: false
