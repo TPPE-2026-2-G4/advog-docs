@@ -78,7 +78,6 @@ nav:
     - Definições: pages/1-visao/4-dds.md
     - Backlog do Produto: pages/1-visao/5-backlog.md
   - Documentação Técnica:
-    - Prototipo: pages/2-doctecnico/1-prototipo.md
     - Banco de Dados: pages/2-doctecnico/2-bancodados.md
   - Atas de Reunião:
       - Sprint 0:
