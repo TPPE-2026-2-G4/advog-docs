@@ -6,7 +6,7 @@ O **Diagrama Lógico de Dados (DLD)** é uma representação da estrutura do ban
 
 Ou seja, o DLD serve para validar se a estrutura de dados projetada realmente atende às regras de negócio levantadas com o cliente antes de partir para a implementação física (scripts SQL, migrations, engine do banco, etc.). No caso deste projeto, o DLD abaixo modela as entidades de clientes, processos, atividades (Kanban), financeiro, arquivos, equipe (funcionários e cargos) e o conteúdo institucional do escritório.
 
-![Diagrama Lógico de Dados](../../assets/DLD/DLD_v1.png)
+![Diagrama Lógico de Dados](../../assets/DLD/DLD_v2.png)
 
 ## 2. Dicionário de Dados
 
@@ -94,6 +94,7 @@ O **dicionário de dados** é um documento complementar ao DLD que descreve, em 
 <tr><td>data_realizado</td><td>Data em que o processo teve uma resolução</td><td>TIMESTAMP</td><td></td></tr>
 <tr><td>data_prazo</td><td>Data máxima planejada para que o processo seja concluido</td><td>TIMESTAMP</td><td>NOT NULL</td></tr>
 <tr><td>cliente_id</td><td>Chave estrangeira para a tabela Cliente, indica qual o cliente está envolvido no processo</td><td>INTEGER</td><td>FK, NOT NULL</td></tr>
+<tr><td>funcionario_id</td><td>Chave estrangeira para a tabela Funcionario, indica qual o advogado está responsável pelo processo</td><td>INTEGER</td><td>FK, NOT NULL</td></tr>
 </table>
 
 ### 2.7. Atividade
@@ -172,6 +173,7 @@ O **dicionário de dados** é um documento complementar ao DLD que descreve, em 
 <tr><td>exibicao_institucional</td><td>Indica se o funcioário irá aparecer na tela da página institucional, na aba de funcionários</td><td>BOOLEAN</td><td>NOT NULL</td></tr>
 <tr><td>cargo_id</td><td>Chave estrangeira para a tabela Cargo, indicando o cargo do funcionário e, consequentemente, seu nível de permissão de acesso à área administrativa</td><td>INTEGER</td><td>FK, NOT NULL</td></tr>
 <tr><td>foto_perfil</td><td>Chave estrangeira para a tabela Arquivo, que irá guardar o link do bucket da foto de perfil do usuário (sempre em PNG ou JPG)</td><td>INTEGER</td><td>FK, NOT NULL</td></tr>
+<tr><td>atuacao_id</td><td>Chave estrangeira para a tabela Atuacao, indica a area de atuação do advogado (Trabalhista, Civil, etc)</td><td>INTEGER</td><td>FK, NOT NULL</td></tr>
 </table>
 
 ### 2.13. Cargo
@@ -206,6 +208,18 @@ O **dicionário de dados** é um documento complementar ao DLD que descreve, em 
 <tr><td>atualizado_em</td><td>Data da última atualização destes dados de personalização</td><td>TIMESTAMP</td><td>NOT NULL</td></tr>
 </table>
 
+### 2.15. Atuacao
+
+<table>
+<tr><th colspan="4">Atuacao</th></tr>
+<tr><td colspan="4">Entidade que irá registar as areas de atuação da advocacia, como o direito trabalhista, previdenciário, civil, etc.</td></tr>
+<tr><th>Nome do Atributo</th><th>Descrição</th><th>Tipo</th><th>Restrições</th></tr>
+<tr><td>atuacao_id</td><td>Identificador único e numérico da atuação</td><td>INTEGER</td><td>PK, AUTO-INCREMENT</td></tr>
+<tr><td>nome</td><td>Nome da área de atuação</td><td>VARCHAR(100)</td><td>NOT NULL</td></tr>
+<tr><td>descricao</td><td>Descrição sobre a area de atuação</td><td>VARCHAR(255)</td><td>NOT NULL</td></tr>
+<tr><td>exibicao_institucional</td><td>Indica se esta area de atuacao irá ser exibida ou não na página institucional, na seção de "Áreas de Atuação"</td><td>BOOLEAN</td><td>NOT NULL</td></tr>
+</table>
+
 </br>
 </br>
 </br>
@@ -219,5 +233,9 @@ O **dicionário de dados** é um documento complementar ao DLD que descreve, em 
   sub_title: 14/09/2026
   content: Criação do documento, inserção do Diagrama Lógico de Dados e estrutura do dicionário de dados por tabela, por [Daniel Rodrigues](https://github.com/DanielRogs).
   icon: ':material-file-document-plus-outline:'
+- title: v2.0
+  sub_title: 18/09/2026
+  content: Adição da tabela Atuação na documentação, por [Daniel Rodrigues](https://github.com/DanielRogs).
+  icon: ':material-file-edit-outline:'
 
 ::/timeline::
