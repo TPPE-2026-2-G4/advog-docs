@@ -6,7 +6,7 @@ O **Diagrama Lógico de Dados (DLD)** é uma representação da estrutura do ban
 
 Ou seja, o DLD serve para validar se a estrutura de dados projetada realmente atende às regras de negócio levantadas com o cliente antes de partir para a implementação física (scripts SQL, migrations, engine do banco, etc.). No caso deste projeto, o DLD abaixo modela as entidades de clientes, processos, atividades (Kanban), financeiro, arquivos, equipe (funcionários e cargos) e o conteúdo institucional do escritório.
 
-![Diagrama Lógico de Dados](../../assets/DLD/DLD_v2.png)
+![Diagrama Lógico de Dados](../../assets/DLD/DLD_v3.png)
 
 ## 2. Dicionário de Dados
 
@@ -236,6 +236,10 @@ O **dicionário de dados** é um documento complementar ao DLD que descreve, em 
 - title: v2.0
   sub_title: 18/09/2026
   content: Adição da tabela Atuação na documentação, por [Daniel Rodrigues](https://github.com/DanielRogs).
+  icon: ':material-file-edit-outline:'
+- title: v3.0
+  sub_title: 01/10/2026
+  content: Atualização do DLD para correção de erros, por [Daniel Rodrigues](https://github.com/DanielRogs).
   icon: ':material-file-edit-outline:'
 
 ::/timeline::
