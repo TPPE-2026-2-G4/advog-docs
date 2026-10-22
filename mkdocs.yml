@@ -79,6 +79,7 @@ nav:
     - Backlog do Produto: pages/1-visao/5-backlog.md
   - Documentação Técnica:
     - Banco de Dados: pages/2-doctecnico/1-bancodados.md
+    - Integração Datajud (US19): pages/2-doctecnico/2-datajud.md
   - Atas de Reunião:
       - Sprint 0:
         - Histórico do Backlog: pages/3-ata/sprint0/historico.md
