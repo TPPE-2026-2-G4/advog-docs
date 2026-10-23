@@ -80,6 +80,7 @@ nav:
   - Documentação Técnica:
     - Protótipo: pages/2-doctecnico/1-prototipo.md
     - Banco de Dados: pages/2-doctecnico/2-bancodados.md
+    - Integração Datajud (US19): pages/2-doctecnico/2-datajud.md
   - Atas de Reunião:
       - Sprint 0:
         - Histórico do Backlog: pages/3-ata/sprint0/historico.md
